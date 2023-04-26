@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.NotePage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Entry x:Name="Title"  Placeholder="Titre" FontAttributes="Bold"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <Editor x:Name="Contenu"  Placeholder="Note" VerticalOptions="FillAndExpand"/>
+            </ScrollView>
+            <Button x:Name="EraseButton"  Text="Effacer cette note" Clicked="EraseButton_Click" IsVisible="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
